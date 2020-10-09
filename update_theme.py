@@ -55,4 +55,4 @@ with open(path_to_save, "wb") as f:
         if chunk:
             f.write(chunk)
 
-ch_wal.doit(wallpaper_folder, home_dir)
+ch_wal.doit(path_to_save, home_dir)

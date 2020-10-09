@@ -3,14 +3,14 @@ import os
 
 CACHE_DIR = os.path.join(os.environ["HOME"], ".config/wal")
 
-def doit(wallpaper_folder, home_dir, debug=False):
+def doit(wallpaper_path, home_dir, debug=False):
     if debug:
         print("Debug from ch_wal.doit()")
-        print("Image Path: "+wallpaper_folder)
+        print("Image Path: "+wallpaper_path)
         print("Home Path: "+home_dir)
 
     """Entry Function into changing wallpaper"""
-    image = pywal.image.get(str(wallpaper_folder))
+    image = pywal.image.get(str(wallpaper_path))
     # get image palette
     colors = pywal.colors.get(image)
     # apply the palette to all open terminals

@@ -4,6 +4,7 @@ import json
 import requests
 
 import ch_wal
+import unsplash_mod
 
 dirname = os.path.dirname(__file__)
 db_path = os.path.join(dirname, "storage/db.json")
@@ -20,7 +21,7 @@ code = all_creds[3]['code']
 
 # where to save and load images
 home_dir = os.environ['HOME']+"/"
-wallpaper_folder = home_dir + ".wallpaper"
+wallpaper_folder = home_dir + "Pictures/Wallpaper"
 # for verbose debugging on cli
 debug = False
 
@@ -30,7 +31,7 @@ if debug:
     print("redirect uri: "+redirect_uri)
     print("code: "+code)
 
-
+api = unsplash_mod.get_auth(client_id, client_secret, redirect_uri, code)
 
 input_two = input("Enter Image Keyword?: ")
 """ print("You entered " + str(input_two))"""

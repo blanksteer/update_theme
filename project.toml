@@ -1,0 +1,33 @@
+[project]
+name = "update_theme"
+version = "1.0"
+description = "Update linux based desktop env with pywal, unsplash, and etc."
+authors = ["BlankSteer"]
+license = "MIT"
+readme "README.md"
+python = "^3.6"
+homepage = ""
+repository = ""
+documentation = ""
+keywords = [""]
+classifiers = ["Topic :: UX"]
+
+# requirements
+[dependencies]
+"pywal >= 3.3.0"
+"requests >= 2.24.0"
+"unsplash >= 1.0"
+"tinydb >= 4.2.0"
+
+[dev-dependencies]
+
+
+[scripts]
+
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+    "setuptools_scm >= 2.0.0, <3"
+]
+build-backend = "setuptools.build_meta"

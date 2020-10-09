@@ -1,0 +1,11 @@
+# ignore development source reminder
+sources.txt
+
+# ignore storage folder
+storage
+
+# ignore python packaging
+dist
+build
+__pycache__
+.egg-info
